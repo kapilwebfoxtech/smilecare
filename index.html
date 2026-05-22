@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Care - Premium Dental Clinic & Specialist Orthodontics</title>
+    <meta name="description"
+        content="Welcome to Smile Care, where we offer high-end cosmetic dentistry, specialist orthodontics, dental implants, and compassionate family care in a state-of-the-art clinic.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="brand-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="logo-icon">
+                    <rect x="9" y="2" width="6" height="20" rx="3" fill="#0a54fa" />
+                    <rect x="2" y="9" width="20" height="6" rx="3" fill="#0a54fa" />
+                </svg>
+                <span class="logo-text">Smile<span>Care</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#appointment" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Nav Actions (Solid pill enquiry button with arrow circle matching mockup) -->
+            <div class="nav-actions">
+                <a href="#appointment" class="btn-header-enquiry" id="nav-cta-btn">
+                    <span>Make an enquiry</span>
+                    <span class="arrow-circle">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </span>
+                </a>
+                <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SVG Clip Path Definition for the massive sweeping organic mask on the right -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <clipPath id="hero-curve" clipPathUnits="objectBoundingBox">
+                <path
+                    d="M0.5225 0.2094C0.5603 0.1558 0.7038 0.0329 0.7830 0.0095C1.0634 -0.0731 1.0210 0.4026 0.9338 0.6258C0.9054 0.6987 0.8291 0.8706 0.6067 0.9806C0.3975 1.0840 0.1206 0.7266 0.0369 0.6065C-0.0467 0.4865 0.0120 0.2255 0.2102 0.2635C0.4084 0.3016 0.4752 0.2764 0.5225 0.2094Z" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <!-- Subtle wave background lines on the bottom left -->
+            <div class="hero-bg-lines"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+
+
+                    <h1 class="hero-title">
+                        Expert dental care for <span class="highlight-blue">your brightest smile</span>
+                    </h1>
+
+                    <!-- Blue divider line beneath the title matching mockup exactly -->
+                    <div class="title-divider"></div>
+
+                    <p class="hero-description">
+                        At Smile Care, we deliver personalized support with dignity, compassion, and peace of mind.
+                    </p>
+
+                    <!-- Horizontally aligned actions row (CTA + Trust Avatars Stack) matching mockup exactly -->
+                    <div class="hero-actions-row">
+                        <a href="#services" class="btn-hero-services" id="hero-primary-cta">
+                            <span>Discover our services</span>
+                            <span class="arrow-circle">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <div class="trust-avatars-group">
+                            <div class="avatar-stack">
+                                <img src="assets/images/team_doctor_1.png" alt="Specialist Doctor 1">
+                                <img src="assets/images/team_doctor_2.png" alt="Specialist Doctor 2">
+                                <img src="assets/images/team_doctor_3.png" alt="Specialist Doctor 3">
+                            </div>
+                            <p class="trust-text">Trusted by families<br>across the community</p>
+                        </div>
+                    </div>
+
+                    <!-- 4-Column Metrics Card matching mockup exactly -->
+                    <div class="hero-floating-grid-card">
+                        <div class="floating-grid-col">
+                            <div class="grid-col-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <span class="grid-col-label">Compassionate<br>Care</span>
+                        </div>
+                        <div class="grid-col-divider"></div>
+                        <div class="floating-grid-col">
+                            <div class="grid-col-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <polyline points="9 11 11 13 15 9" />
+                                </svg>
+                            </div>
+                            <span class="grid-col-label">Trusted &<br>Reliable</span>
+                        </div>
+                        <div class="grid-col-divider"></div>
+                        <div class="floating-grid-col">
+                            <div class="grid-col-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <span class="grid-col-label">Always Here<br>for You</span>
+                        </div>
+                        <div class="grid-col-divider"></div>
+                        <div class="floating-grid-col">
+                            <div class="grid-col-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z" />
+                                    <path d="M12 7a2.5 2.5 0 0 1 2 4.5L12 14l-2-2.5A2.5 2.5 0 0 1 12 7z" />
+                                </svg>
+                            </div>
+                            <span class="grid-col-label">Dignity &<br>Respect</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-organic-wrapper">
+                        <!-- Dual-layered matching organic blue glow behind the frame -->
+                        <div class="organic-bg-wave"></div>
+
+                        <!-- High-resolution dentist frame with exact clipping mask -->
+                        <div class="hero-organic-frame">
+                            <img src="assets/images/hero_dentist.png"
+                                alt="Friendly expert dental providers smiling at senior patient in a clinical room"
+                                class="hero-organic-img">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">WHAT WE OFFER</span>
+                    <h2 class="section-title">Discover our <span class="highlight">services</span></h2>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Preventive Care -->
+                    <div class="service-card card-blue" id="service-preventive">
+                        <div class="service-img-wrapper ">
+                            <img src="assets/images/preventivecare.jpg" alt="Preventive Care">
+                        </div>
+
+                        <h3>Preventive Care</h3>
+                        <p>Comprehensive cleanings, detailed checkups, and early cavity detection to safeguard your
+                            natural teeth and prevent oral issues.</p>
+                    </div>
+
+                    <!-- Service 2: Restorative Dentistry -->
+                    <div class="service-card card-green" id="service-restorative">
+                        <div class="service-img-wrapper ">
+                            <img src="assets/images/dental-implants.jpg" alt="Preventive Care">
+                        </div>
+                        <h3>Dental Implants</h3>
+                        <p>Permanent, natural-looking tooth replacements using premium biocompatible titanium implants
+                            to restore full function.</p>
+                    </div>
+
+                    <!-- Service 3: Orthodontics & Aligners -->
+                    <div class="service-card card-cyan" id="service-orthodontics">
+                        <div class="service-img-wrapper ">
+                            <img src="assets/images/orthodontics.jpg" alt="Preventive Care">
+                        </div>
+                        <h3>Orthodontics</h3>
+                        <p>Transform your bite with custom clear aligners or premium discreet braces, tailored for
+                            teenagers and working professionals alike.</p>
+                    </div>
+
+                    <!-- Service 4: Cosmetic Dentistry -->
+                    <div class="service-card card-slate" id="service-cosmetic">
+                        <div class="service-img-wrapper ">
+                            <img src="assets/images/cosmoticcaare.jpg" alt="Preventive Care">
+                        </div>
+                        <h3>Cosmetic Care</h3>
+                        <p>Advanced laser teeth whitening, high-end porcelain veneers, and complete smile makeovers to
+                            boost your self-confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container about-container">
+                <div class="about-visual">
+                    <div class="about-images-group">
+                        <div class="about-img-back">
+                            <img src="assets/images/about_dentist_2.png"
+                                alt="Luxurious modern dental clinic interior waiting room" class="about-img">
+                        </div>
+                        <div class="about-img-front">
+                            <img src="assets/images/about_dentist_1.png"
+                                alt="Smiling expert female dentist in clinic white jacket" class="about-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tagline">WHO WE ARE</span>
+                    <h2 class="section-title">About <span class="highlight">Dental Care</span></h2>
+                    <p class="about-text-lead">
+                        We are a group of dedicated dental specialists committed to redefining your clinical experience.
+                    </p>
+                    <p class="about-text-description">
+                        At Smile Care, we believe in patient-first treatments. Our clinic is equipped with the latest 3D
+                        digital imaging, pain-free laser technology, and a soothing ambient environment to make your
+                        visits completely stress-free. Whether it's a routine cleaning or a complex implant surgery,
+                        your comfort and health are our absolute priority.
+                    </p>
+                    <a href="#services" class="btn btn-secondary" id="about-read-more-btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section" id="team">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Meet our dedicated <span class="highlight">team</span></h2>
+                    <p class="section-subtitle">Our team consists of board-certified specialists with decades of
+                        combined clinical expertise.</p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Doctor 1 -->
+                    <div class="team-card" id="team-doctor-1-card">
+                        <div class="team-img-wrapper">
+                            <img src="assets/images/team_doctor_1.png" alt="Dr. Sarah Adams, Lead Orthodontist"
+                                class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dr. Sarah Adams</h3>
+                            <p>Lead Orthodontist</p>
+                            <div class="team-socials">
+                                <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg></a>
+                                <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="team-card" id="team-doctor-2-card">
+                        <div class="team-img-wrapper">
+                            <img src="assets/images/team_doctor_2.png" alt="Dr. Marcus Vance, Implant Surgeon"
+                                class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dr. Marcus Vance</h3>
+                            <p>Implant Surgeon</p>
+                            <div class="team-socials">
+                                <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg></a>
+                                <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 3 -->
+                    <div class="team-card" id="team-doctor-3-card">
+                        <div class="team-img-wrapper">
+                            <img src="assets/images/team_doctor_3.png" alt="Dr. Emily Taylor, Pediatric Specialist"
+                                class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dr. Emily Taylor</h3>
+                            <p>Pediatric Specialist</p>
+                            <div class="team-socials">
+                                <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg></a>
+                                <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center team-btn-wrapper">
+                    <button class="btn btn-primary-outline" id="view-all-team-btn">Meet All Doctors</button>
+                    <!-- Expandable full doctor directory mimicking high-end UX -->
+                    <div class="all-team-drawer" id="all-team-drawer">
+                        <div class="team-grid additional-team-grid">
+                            <div class="team-card">
+                                <div class="team-img-wrapper">
+                                    <img src="assets/images/about_dentist_1.png"
+                                        alt="Dr. Fiona Davis, Root Canal Therapist" class="team-img">
+                                </div>
+                                <div class="team-info">
+                                    <h3>Dr. Fiona Davis</h3>
+                                    <p>Endodontist</p>
+                                </div>
+                            </div>
+                            <div class="team-card">
+                                <div class="team-img-wrapper">
+                                    <img src="assets/images/team_doctor_1.png" alt="Dr. Aaron Cole, Gum Treatment"
+                                        class="team-img">
+                                </div>
+                                <div class="team-info">
+                                    <h3>Dr. Aaron Cole</h3>
+                                    <p>Periodontist</p>
+                                </div>
+                            </div>
+                            <div class="team-card">
+                                <div class="team-img-wrapper">
+                                    <img src="assets/images/team_doctor_2.png" alt="Dr. Henry Miller, Oral Surgeon"
+                                        class="team-img">
+                                </div>
+                                <div class="team-info">
+                                    <h3>Dr. Henry Miller</h3>
+                                    <p>Oral Maxillofacial Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">PATIENT REVIEWS</span>
+                    <h2 class="section-title">What our <span class="highlight">clients</span> say</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card card-light-blue" id="testimonial-1">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">"The service was truly exceptional! Dr. Sarah Adams explained every step
+                            of my invisalign process. The clinic feels like a premium spa rather than a dental clinic. I
+                            am in love with my new straight smile!"</p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-avatar-1">CM</div>
+                            <div>
+                                <h4>Clara Manson</h4>
+                                <p>Invisalign Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card card-light-purple" id="testimonial-2">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">"I always had dental anxiety, but Dr. Marcus Vance made my implant
+                            surgery completely painless. The 3D printing technology is fascinating, and the staff's
+                            warmth completely blew me away. 10/10 recommend!"</p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-avatar-2">RB</div>
+                            <div>
+                                <h4>Riley Bennett</h4>
+                                <p>Dental Implant Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 (Media/Image Review Card) -->
+                    <div class="testimonial-card card-media" id="testimonial-media">
+                        <img src="assets/images/testimonial_patient.png"
+                            alt="Happy patient smiling showing her beautiful white teeth" class="media-bg">
+                        <div class="media-overlay">
+                            <button class="play-btn" aria-label="Play Testimonial Video" id="video-testimonial-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3" />
+                                </svg>
+                            </button>
+                            <div class="media-info">
+                                <h4>Emily Watson</h4>
+                                <p>Veneers Patient Review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Numerical Statistics Counter Section -->
+                <div class="stats-row" id="stats-counter-row">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="12">0</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="5000">0</h3>
+                        <p>Happy Patients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="99">0</h3>
+                        <p>Success Rate %</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="15">0</h3>
+                        <p>Expert Doctors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Appointment Section -->
+        <section class="appointment-section" id="appointment">
+            <div class="container appointment-container">
+                <div class="appointment-visual">
+                    <img src="assets/images/appointment_clinic.png"
+                        alt="Patient talking with helpful dental clinic nurse" class="appointment-img">
+                </div>
+                <div class="appointment-form-wrapper">
+                    <div class="appointment-header">
+                        <span class="section-tagline">BOOK A VISIT</span>
+                        <h2 class="section-title">Book appointment</h2>
+                    </div>
+
+                    <form class="appointment-form" id="booking-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" placeholder="Enter your full name" required>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" placeholder="Enter your email address" required>
+                                <span class="error-msg" id="email-error">Please enter a valid email</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-doctor">Select doctor</label>
+                                <select id="form-doctor" required>
+                                    <option value="" disabled selected>Choose a specialist</option>
+                                    <option value="adams">Dr. Sarah Adams (Orthodontics)</option>
+                                    <option value="vance">Dr. Marcus Vance (Implants)</option>
+                                    <option value="taylor">Dr. Emily Taylor (Pediatric)</option>
+                                </select>
+                                <span class="error-msg" id="doctor-error">Please select a doctor</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-date">Select date</label>
+                                <input type="date" id="form-date" required>
+                                <span class="error-msg" id="date-error">Please select a future date</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-phone">Phone</label>
+                            <input type="tel" id="form-phone" placeholder="Enter your phone number" required>
+                            <span class="error-msg" id="phone-error">Please enter a valid phone number</span>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="form-privacy" required>
+                            <label for="form-privacy">You agree to our privacy terms and medical data guidelines</label>
+                        </div>
+                        <span class="error-msg" id="privacy-error">You must agree to proceed</span>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Book
+                            appointment</button>
+                    </form>
+
+                    <!-- Form Success Message -->
+                    <div class="form-success-card" id="form-success-card">
+                        <div class="success-icon-badge">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <h3>Appointment Scheduled!</h3>
+                        <p>Thank you for choosing Smile Care. A clinical coordinator will call you in the next 15
+                            minutes to confirm your specific slot and time details.</p>
+                        <button class="btn btn-primary" id="success-done-btn">Done</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section" id="blog">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">DENTAL BLOG</span>
+                    <h2 class="section-title">Explore our <span class="highlight">blog</span></h2>
+                </div>
+
+                <div class="blog-grid">
+                    <!-- Blog Card 1 -->
+                    <article class="blog-card" id="blog-card-1">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog_1.png" alt="Close up of shiny, healthy teeth" class="blog-img">
+                            <span class="blog-badge">Oral Hygiene</span>
+                        </div>
+                        <div class="blog-info">
+                            <span class="blog-date">May 12, 2026</span>
+                            <h3><a href="#">Top 5 daily habits for shiny, perfectly white teeth</a></h3>
+                            <p>Discover dentist-recommended morning routines and eating habits to maintain a bright
+                                white shade naturally.</p>
+                            <a href="#" class="blog-link">Read Article <svg width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 2 -->
+                    <article class="blog-card" id="blog-card-2">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog_2.png" alt="Clear aligners cosmetic dentistry"
+                                class="blog-img">
+                            <span class="blog-badge">Orthodontics</span>
+                        </div>
+                        <div class="blog-info">
+                            <span class="blog-date">May 18, 2026</span>
+                            <h3><a href="#">Clear Aligners vs Braces: Which is right for you?</a></h3>
+                            <p>We weigh the clinical pros and cons of modern invisible aligners against traditional
+                                ceramic brackets.</p>
+                            <a href="#" class="blog-link">Read Article <svg width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 3 -->
+                    <article class="blog-card" id="blog-card-3">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog_3.png" alt="Child learning how to brush teeth"
+                                class="blog-img">
+                            <span class="blog-badge">Pediatric Care</span>
+                        </div>
+                        <div class="blog-info">
+                            <span class="blog-date">May 20, 2026</span>
+                            <h3><a href="#">Making dental visits fun and fear-free for kids</a></h3>
+                            <p>Proactive strategies for parents to introduce toddler children to their first dentist
+                                appointment without stress.</p>
+                            <a href="#" class="blog-link">Read Article <svg width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <!-- Left Newsletter Panel (styled as the unique asymmetric card in the image) -->
+            <div class="footer-card" id="footer-newsletter-card">
+                <div class="logo logo-footer">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C10.5 2 9 3.5 9 5C9 7.5 7 9.5 5 9.5C3.5 9.5 2 11 2 12.5C2 17.5 7 22 12 22C17 22 22 17.5 22 12.5C22 11 20.5 9.5 19 9.5C17 9.5 15 7.5 15 5C15 3.5 13.5 2 12 2Z"
+                            fill="#FFFFFF" />
+                    </svg>
+                    <span class="logo-text">Dental<span>Care</span></span>
+                </div>
+                <p class="footer-card-tagline">Receive clinical care guides and dental health updates.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required aria-label="Newsletter Email">
+                    <button type="submit" aria-label="Subscribe"><svg width="16" height="16" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></button>
+                </form>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg></a>
+                    <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <!-- Right Links & Contact Columns -->
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Doctors</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p class="contact-detail"><strong>Address:</strong> 742 Evergreen Terrace, Medical District, NY
+                        10001</p>
+                    <p class="contact-detail"><strong>Phone:</strong> +1 (555) 902-1209</p>
+                    <p class="contact-detail"><strong>Email:</strong> clinic@smilecare.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright bar -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Smile Care Clinic. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
