@@ -820,77 +820,157 @@ h6 {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1.75rem;
+}
+
+
+/* Card Theme Variables for Exquisite Branding */
+.card-blue {
+    --card-accent: var(--color-primary);
+    --card-accent-rgb: 10, 84, 250;
+    --card-bg-gradient: linear-gradient(135deg, #ffffff 0%, #f5f8ff 100%);
+    --service-index: "01";
+}
+
+.card-green {
+    --card-accent: var(--color-primary);
+    --card-accent-rgb: 10, 84, 250;
+    --card-bg-gradient: linear-gradient(135deg, #ffffff 0%, #f5f8ff 100%);
+    --service-index: "02";
+}
+
+.card-cyan {
+    --card-accent: var(--color-primary);
+    --card-accent-rgb: 10, 84, 250;
+    --card-bg-gradient: linear-gradient(135deg, #ffffff 0%, #f5f8ff 100%);
+    --service-index: "03";
+}
+
+.card-slate {
+    --card-accent: var(--color-primary);
+    --card-accent-rgb: 10, 84, 250;
+    --card-bg-gradient: linear-gradient(135deg, #ffffff 0%, #f5f8ff 100%);
+    --service-index: "04";
 }
 
 .service-card {
-    padding: 1.25rem;
+    padding: 1.5rem;
     padding-bottom: 2.5rem;
-    border-radius: 20px;
+    border-radius: 24px;
+    background: var(--card-bg-gradient);
+    border: 1px solid rgba(var(--card-accent-rgb), 0.08);
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 10px 30px rgba(var(--card-accent-rgb), 0.02);
 }
 
+/* Decorative Index Counter Layer */
+.service-card::before {
+    content: var(--service-index);
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    color: rgba(var(--card-accent-rgb), 0.05);
+    line-height: 1;
+    pointer-events: none;
+    transition: all var(--transition-normal);
+}
+
+
+
+/* Asymmetric Organic Image Wrapper */
 .service-img-wrapper {
     width: 100%;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden; /* Clean clipping of image hover zoom */
+    position: relative;
+    border-radius: 20px 20px 4px 20px;
+    transition: border-radius var(--transition-normal);
 }
 
 .service-img-wrapper img {
-    border-radius: 12px;
+    border-radius: 20px 20px 4px 20px;
     height: auto;
     width: 100%;
     object-fit: cover;
     aspect-ratio: 4/3;
-    transition: transform var(--transition-slow);
+    transition: transform var(--transition-slow), border-radius var(--transition-normal);
 }
 
 .service-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
     color: var(--bg-dark);
-    letter-spacing: -0.01em;
-    padding: 0 0.5rem;
+    letter-spacing: -0.02em;
+    padding: 0 0.25rem;
+    transition: color var(--transition-normal);
 }
 
 .service-card p {
     font-size: 0.9rem;
     color: var(--text-muted);
-    line-height: 1.6;
-    padding: 0 0.5rem;
+    line-height: 1.65;
+    padding: 0 0.25rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
 }
 
-/* Premium Pastel Backgrounds */
-.card-blue {
-    background-color: #f6f7fd;
+
+/* Premium "Learn More" Call to Action */
+.service-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-cyan); /* Unified default color to match 3rd card */
+    padding: 0 0.25rem;
+    transition: all var(--transition-normal);
 }
 
-.card-green {
-    background-color: #f0fcf6;
+.service-link svg {
+    transition: transform var(--transition-normal);
 }
 
-.card-cyan {
-    background-color: #f0fbfd;
-}
-
-.card-slate {
-    background-color: #f6f5fd;
-}
-
-/* Card Hover Interactions */
+/* Hover Interactions */
 .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+    transform: translateY(-10px);
+    border-color: rgba(var(--card-accent-rgb), 0.25);
+    box-shadow: 0 20px 40px -15px rgba(var(--card-accent-rgb), 0.12);
 }
 
-.service-card:hover img {
-    transform: scale(1.05);
+.service-card:hover::before {
+    color: rgba(var(--card-accent-rgb), 0.08);
+    transform: translateY(-4px);
+}
+
+.service-card:hover .service-img-wrapper,
+.service-card:hover .service-img-wrapper img {
+    border-radius: 20px 4px 20px 20px;
+}
+
+.service-card:hover .service-img-wrapper img {
+    transform: scale(1.04);
+}
+
+.service-card:hover h3 {
+    color: var(--card-accent);
+}
+
+.service-card:hover .service-link {
+    color: var(--bg-dark);
+    gap: 0.75rem;
+}
+
+.service-card:hover .service-link svg {
+    transform: translateX(4px);
 }
 
 /* --------------------------------------------------------------------------
