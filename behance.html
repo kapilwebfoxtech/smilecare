@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Care - Behance Design Case Study</title>
+    <meta name="description"
+        content="UX/UI and Visual Branding Design Case Study for Smile Care Clinic. Explore the design brief, colors, typography scales, wireframes, and component spotlights.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="behance.css">
+</head>
+
+<body class="behance-page">
+
+    <!-- Header Navigation (Styled perfectly to match the clean light clinical brand) -->
+    <header class="header scrolled" id="header" style="background-color: rgba(255, 255, 255, 0.92); border-bottom: 1px solid rgba(10, 84, 250, 0.08);">
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="brand-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="logo-icon">
+                    <rect x="9" y="2" width="6" height="20" rx="3" fill="#0a54fa" />
+                    <rect x="2" y="9" width="20" height="6" rx="3" fill="#0a54fa" />
+                </svg>
+                <span class="logo-text">Smile<span>Care</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="casestudy.html" class="nav-link">Case Study</a></li>
+                    <li><a href="#booking-credits" class="nav-link active">Design Case</a></li>
+                </ul>
+            </nav>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <a href="index.html#appointment" class="btn-header-enquiry" id="nav-cta-btn">
+                    <span>Make an enquiry</span>
+                    <span class="arrow-circle">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </span>
+                </a>
+                <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Behance Cover Hero Section -->
+        <section class="behance-hero">
+            <div class="behance-container">
+                <span class="behance-tag">BEHANCE SHOWCASE</span>
+                <h1 class="behance-title">Smile Care:<br><span class="gradient-text-blue">Visual Identity & UI Design</span></h1>
+                <p class="behance-hero-subtitle">
+                    A comprehensive design case study outlining the branding architecture, typography systems, skeletal layouts, and responsive components behind the premium dental clinic interface.
+                </p>
+
+                <!-- Floating Interactive Grid Blueprint Visual -->
+                <div class="wireframe-blueprint-box">
+                    <div class="blueprint-line-grid"></div>
+                    
+                    <div class="skeletal-grid">
+                        <!-- Left: skeletal wireframe layout visual -->
+                        <div class="blueprint-skeletal-landing">
+                            <div class="blueprint-nav-bar"></div>
+                            <div class="blueprint-hero-grid">
+                                <div class="blueprint-col-left">
+                                    <div class="blueprint-row-line" style="width: 80%; background-color: rgba(10, 84, 250, 0.4);"></div>
+                                    <div class="blueprint-row-line" style="width: 95%;"></div>
+                                    <div class="blueprint-row-line" style="width: 60%;"></div>
+                                    <div class="blueprint-card-metrics"></div>
+                                </div>
+                                <div class="blueprint-col-right"></div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Layout design annotations -->
+                        <div class="blueprint-annotations" style="text-align: left;">
+                            <div class="annotation-item">
+                                <span class="annotation-badge">1</span>
+                                <div class="annotation-text">
+                                    <h4>Asymmetric Grid Framework</h4>
+                                    <p>We alignment-mapped the hero copy column to a centered 1400px container while allowing the organic illustration column to bleed perfectly to the viewport boundary.</p>
+                                </div>
+                            </div>
+                            <div class="annotation-item">
+                                <span class="annotation-badge">2</span>
+                                <div class="annotation-text">
+                                    <h4>Dynamic SVG Organic Mask</h4>
+                                    <p>Used high-precision CSS clipPaths mapping cubic Bézier equations to mask image frames with sweeping, medical-fresh fluid waves.</p>
+                                </div>
+                            </div>
+                            <div class="annotation-item">
+                                <span class="annotation-badge">3</span>
+                                <div class="annotation-text">
+                                    <h4>High-Glassmorphism Metric Cards</h4>
+                                    <p>Constructed overlaying statistics grid blocks featuring background blur, light borders, and soft shadows for maximum clinical cleanliness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Brief & Project Background -->
+        <section class="behance-section">
+            <div class="behance-container">
+                <div class="glass-card-grid">
+                    <div class="behance-glass-card">
+                        <span class="behance-section-tag">THE OBJECTIVE</span>
+                        <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.85rem; color: var(--text-main); margin-bottom: 2rem; line-height: 1.3;">
+                            Crafting a clinical interface that bridges warm human compassion with high-end premium technology.
+                        </h3>
+                        <div class="brief-list">
+                            <div class="brief-item">
+                                <h4>Compassionate Tone</h4>
+                                <p>Humanizing clinic imagery to eliminate dental anxiety and promote premium, peaceful dental consults.</p>
+                            </div>
+                            <div class="brief-item">
+                                <h4>Medical Precision</h4>
+                                <p>Sleek modern layouts, vibrant vector graphics, and clean, legible typography scales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="padding-left: 2rem;">
+                        <h4 style="color: var(--text-main); margin-bottom: 1rem; font-family: 'Outfit', sans-serif;">Project Details</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.9375rem;">
+                            <li><strong style="color: var(--text-main);">Deliverables:</strong> Brand Identity, UI Design, Vector Art</li>
+                            <li><strong style="color: var(--text-main);">Layout:</strong> Fluid Responsive Desktop & Mobile</li>
+                            <li><strong style="color: var(--text-main);">Fonts:</strong> Outfit & Plus Jakarta Sans</li>
+                            <li><strong style="color: var(--text-main);">Software:</strong> Figma, VS Code, Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color System Showcase -->
+        <section class="behance-section" style="background-color: var(--bg-light); border-top: 1px solid rgba(10, 84, 250, 0.05); border-bottom: 1px solid rgba(10, 84, 250, 0.05);">
+            <div class="behance-container">
+                <div class="behance-section-header">
+                    <span class="behance-section-tag">BRAND IDENTITY</span>
+                    <h2 class="behance-section-title">Harmonious Color Palette</h2>
+                </div>
+
+                <div class="color-system-grid">
+                    <!-- Color 1: Primary Vivid Blue -->
+                    <div class="color-capsule-card card-primary-glow">
+                        <div class="color-block-visual" style="background: linear-gradient(135deg, #0a54fa 0%, #003ec7 100%);"></div>
+                        <h4>Vivid Clinical Blue</h4>
+                        <p style="color: var(--text-muted); font-size: 0.8125rem; font-weight: 700; text-transform: uppercase;">Primary Brand</p>
+                        <code>HEX: #0A54FA</code>
+                        <code style="margin-top: 0.25rem;">HSL: 222°, 96%, 51%</code>
+                    </div>
+
+                    <!-- Color 2: Teal/Cyan -->
+                    <div class="color-capsule-card card-cyan-glow">
+                        <div class="color-block-visual" style="background: linear-gradient(135deg, #00cfb4 0%, #00a892 100%);"></div>
+                        <h4>Fresh Aqua Teal</h4>
+                        <p style="color: var(--text-muted); font-size: 0.8125rem; font-weight: 700; text-transform: uppercase;">Accent Highlight</p>
+                        <code>HEX: #00CFB4</code>
+                        <code style="margin-top: 0.25rem;">HSL: 172°, 100%, 41%</code>
+                    </div>
+
+                    <!-- Color 3: Success Emerald -->
+                    <div class="color-capsule-card card-success-glow">
+                        <div class="color-block-visual" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);"></div>
+                        <h4>Success Emerald</h4>
+                        <p style="color: var(--text-muted); font-size: 0.8125rem; font-weight: 700; text-transform: uppercase;">Mint Health</p>
+                        <code>HEX: #10B981</code>
+                        <code style="margin-top: 0.25rem;">HSL: 162°, 76%, 41%</code>
+                    </div>
+
+                    <!-- Color 4: Slate Light -->
+                    <div class="color-capsule-card card-dark-glow">
+                        <div class="color-block-visual" style="background: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08);"></div>
+                        <h4>Crisp Clinical White</h4>
+                        <p style="color: var(--text-muted); font-size: 0.8125rem; font-weight: 700; text-transform: uppercase;">Backdrop Clean</p>
+                        <code>HEX: #FFFFFF</code>
+                        <code style="margin-top: 0.25rem;">HSL: 0°, 0%, 100%</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Showcase -->
+        <section class="behance-section">
+            <div class="behance-container">
+                <div class="behance-section-header">
+                    <span class="behance-section-tag">CREATIVE DIRECTION</span>
+                    <h2 class="behance-section-title">Typography System</h2>
+                </div>
+
+                <div class="typo-showcase-grid">
+                    <!-- Left: Giant visual letter presentation -->
+                    <div class="typo-font-card">
+                        <div class="font-giant-symbol">Aa</div>
+                        <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.75rem; color: var(--text-main); font-weight: 800;">Outfit</h3>
+                        <p style="color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin-top: 0.25rem;">Geometric Display Font</p>
+                    </div>
+
+                    <!-- Right: Typography Scale List -->
+                    <div class="typo-scale-list">
+                        <!-- Heading Sample -->
+                        <div class="typo-scale-row">
+                            <span class="typo-lbl">Header 1</span>
+                            <div>
+                                <h3 class="typo-sample-h1">Vivid clinical expertise</h3>
+                                <p class="typo-sample-muted" style="margin-top: 0.25rem;">Outfit Bold - 72px / 1.1 Line Height</p>
+                            </div>
+                        </div>
+
+                        <!-- Body Sample -->
+                        <div class="typo-scale-row">
+                            <span class="typo-lbl">Body Text</span>
+                            <div>
+                                <p class="typo-scale-row-sample typo-sample-body">
+                                    At Smile Care, we deliver personalized support with dignity, compassion, and peace of mind. Our specialists prioritize pain-free dental health.
+                                </p>
+                                <p class="typo-sample-muted" style="margin-top: 0.5rem;">Plus Jakarta Sans Semibold - 18px / 1.6 Line Height</p>
+                            </div>
+                        </div>
+
+                        <!-- Label Sample -->
+                        <div class="typo-scale-row">
+                            <span class="typo-lbl">Captions</span>
+                            <div>
+                                <p style="font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.1em; color: var(--color-cyan); text-transform: uppercase;">
+                                    WHAT WE OFFER / CLINICAL RESULTS
+                                </p>
+                                <p class="typo-sample-muted" style="margin-top: 0.25rem;">Plus Jakarta Sans ExtraBold - 13px / 0.1em Tracking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- High-Fidelity UI Component Spotlight Panels -->
+        <section class="behance-section" style="background-color: var(--bg-light); border-top: 1px solid rgba(10, 84, 250, 0.05); border-bottom: 1px solid rgba(10, 84, 250, 0.05);">
+            <div class="behance-container">
+                <div class="behance-section-header">
+                    <span class="behance-section-tag">HIGH-FIDELITY ZOOM-IN</span>
+                    <h2 class="behance-section-title">Key Component Spotlights</h2>
+                </div>
+
+                <!-- Spotlight 1: Floating Metrics Grid Card -->
+                <div class="spotlight-card-wrapper">
+                    <div>
+                        <span class="spotlight-tagline">Layout Element 1</span>
+                        <h3 class="spotlight-title">Floating Metrics Grid</h3>
+                        <p class="spotlight-desc">
+                            We engineered a sleek, glassmorphic 4-column metrics box that overlaps the hero section. This anchors patient trust immediately upon landing.
+                        </p>
+                        <div class="spotlight-highlights-list">
+                            <div class="spotlight-h-item">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Background blur effect (backdrop-filter: blur(20px))</span>
+                            </div>
+                            <div class="spotlight-h-item">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Vertical radial-gradient line columns separators</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spotlight-visual-side" style="background-color: var(--bg-dark); padding: 3rem; display: flex; justify-content: center; align-items: center;">
+                        <!-- Scaled visual representation of metrics block -->
+                        <div style="background: rgba(255, 255, 255, 0.07); border: 1.5px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 1.5rem; display: flex; gap: 2rem; width: 100%;">
+                            <div style="text-align: center; flex: 1;">
+                                <div style="width: 32px; height: 32px; background: rgba(10, 84, 250, 0.25); border-radius: 6px; margin: 0 auto 0.5rem auto; display: flex; align-items: center; justify-content: center; color: var(--color-primary-light);">
+                                    🛡️
+                                </div>
+                                <span style="font-size: 0.75rem; font-weight: 700; color: #ffffff;">Compassionate<br>Care</span>
+                            </div>
+                            <div style="width: 1px; background: rgba(255, 255, 255, 0.15);"></div>
+                            <div style="text-align: center; flex: 1;">
+                                <div style="width: 32px; height: 32px; background: rgba(0, 207, 180, 0.25); border-radius: 6px; margin: 0 auto 0.5rem auto; display: flex; align-items: center; justify-content: center; color: var(--color-cyan);">
+                                    ✨
+                                </div>
+                                <span style="font-size: 0.75rem; font-weight: 700; color: #ffffff;">Always Here<br>for You</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spotlight 2: Vector Specialist Lady Dentist -->
+                <div class="spotlight-card-wrapper">
+                    <div>
+                        <span class="spotlight-tagline">Layout Element 2</span>
+                        <h3 class="spotlight-title">Specialist "Hero Lady" Vector</h3>
+                        <p class="spotlight-desc">
+                            To deliver a modern medical signature look, we created a fully custom SVG illustration representing Dr. Sarah Adams, Lead Orthodontist, carrying out a dental checkup.
+                        </p>
+                        <div class="spotlight-highlights-list">
+                            <div class="spotlight-h-item">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Multi-layered dark espresso vector hair locks</span>
+                            </div>
+                            <div class="spotlight-h-item">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Gold sparkles & floating clinical background symbols</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spotlight-visual-side" style="background-color: #ffffff; padding: 1.5rem; display: flex; justify-content: center; align-items: center;">
+                        <!-- Beautiful small nested preview of the custom dentist lady SVG -->
+                        <svg viewBox="0 0 600 600" width="220" height="220" style="filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));">
+                            <!-- Circular Backdrop -->
+                            <circle cx="300" cy="300" r="220" fill="rgba(10, 84, 250, 0.05)" />
+                            <!-- Face -->
+                            <path d="M236,230 C236,310 260,335 300,335 C340,335 364,310 364,230 C364,160 340,165 300,165 C260,165 236,160 236,230 Z" fill="#ffd5c2" />
+                            <circle cx="258" cy="268" r="10" fill="#ffb4a2" opacity="0.4" />
+                            <circle cx="342" cy="268" r="10" fill="#ffb4a2" opacity="0.4" />
+                            <!-- Eyes -->
+                            <path d="M255,236 C262,230 274,230 281,236" fill="none" stroke="#1e293b" stroke-width="5" stroke-linecap="round" />
+                            <path d="M319,236 C326,230 338,230 345,236" fill="none" stroke="#1e293b" stroke-width="5" stroke-linecap="round" />
+                            <!-- Smile -->
+                            <path d="M272,280 C272,305 328,305 328,280 Z" fill="#651522" />
+                            <path d="M275,281 C285,292 315,292 325,281 Z" fill="#ffffff" />
+                            <!-- Hair -->
+                            <path d="M300,158 C355,158 375,190 375,230 C375,255 365,270 358,260 C350,250 355,200 300,200 C245,200 250,250 242,260 C235,270 225,255 225,230 C225,190 245,158 300,158 Z" fill="#1a202c" />
+                            <!-- Collar -->
+                            <path d="M250,340 L350,340 L360,400 L240,400 Z" fill="#0a54fa" />
+                            <path d="M245,340 C200,355 170,390 160,480 H440 C430,390 400,355 355,340 H245 Z" fill="#ffffff" />
+                            <!-- Stethoscope -->
+                            <circle cx="296" cy="450" r="12" fill="#64748b" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Behance Project Appreciation Footer Banner -->
+        <section class="behance-footer-banner" id="booking-credits">
+            <div class="behance-container">
+                <!-- Giant Interactive Appreciation Thumbs Up Button -->
+                <div class="appreciate-giant-btn" id="appreciate-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M23,10C23,8.9 22.1,8 21,8H14.7L15.6,3.6L15.7,3.3C15.7,2.9 15.5,2.5 15.2,2.2L14,1L7.5,7.5C7.1,7.9 7,8.4 7,9V20C7,21.1 7.9,22 9,22H18C18.8,22 19.5,21.5 19.8,20.8L22.8,13.8C22.9,13.6 23,13.3 23,13V10M1,9V22H5V9H1Z" />
+                    </svg>
+                </div>
+                
+                <div class="appreciate-count" id="like-number">1,428</div>
+                <div class="appreciate-lbl">Project Appreciations</div>
+
+                <div class="behance-team-credits">
+                    <!-- Designer -->
+                    <div class="credit-member">
+                        <div class="credit-avatar" style="background-color: var(--color-primary); color: #ffffff;">UI</div>
+                        <div class="credit-name">
+                            <h5>Kapil Kosare</h5>
+                            <p>Lead Product Designer</p>
+                        </div>
+                    </div>
+                    <!-- Developer -->
+                    <div class="credit-member">
+                        <div class="credit-avatar" style="background-color: var(--color-cyan); color: #ffffff;">DE</div>
+                        <div class="credit-name">
+                            <h5>Antigravity AI</h5>
+                            <p>Creative UI Engineer</p>
+                        </div>
+                    </div>
+                    <!-- Dental Director -->
+                    <div class="credit-member">
+                        <div class="credit-avatar" style="background-color: #ffc107; color: #1e293b;">SA</div>
+                        <div class="credit-name">
+                            <h5>Dr. Sarah Adams</h5>
+                            <p>Clinical Reviewer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="behance-sign-off-title">Thank you for watching!</h2>
+                
+                <div class="behance-cta-actions">
+                    <a href="index.html" class="btn btn-primary" style="padding: 0.875rem 2.5rem;">
+                        <span>Return to Live Clinic</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.75rem;">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                    <a href="casestudy.html" class="btn btn-primary-outline" style="padding: 0.875rem 2.5rem;">
+                        <span>Clinical Case Study</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Simple, Clean Light Footer -->
+    <footer class="footer" style="background-color: var(--bg-light); border-top: 1px solid rgba(10, 84, 250, 0.08); padding: 50px 0;">
+        <div class="container text-center">
+            <p style="color: var(--text-muted); font-size: 0.875rem;">&copy; 2026 Smile Care Clinic UI Presentation. Built with pure HSL CSS, modern SVGs, and responsive design systems.</p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts (slider drag handle script + like increment logic) -->
+    <script src="script.js"></script>
+    <script>
+        // Simple and satisfying interactive appreciation counter
+        document.addEventListener('DOMContentLoaded', () => {
+            const appreciateBtn = document.getElementById('appreciate-btn');
+            const likeNumber = document.getElementById('like-number');
+            let hasLiked = false;
+
+            if (appreciateBtn && likeNumber) {
+                appreciateBtn.addEventListener('click', () => {
+                    if (!hasLiked) {
+                        appreciateBtn.classList.add('liked');
+                        let currentLikes = parseInt(likeNumber.innerText.replace(',', ''), 10);
+                        likeNumber.innerText = (currentLikes + 1).toLocaleString();
+                        hasLiked = true;
+                        
+                        // Micro appreciation animation overlay triggers
+                        const pulseGlow = document.createElement('div');
+                        pulseGlow.style.position = 'absolute';
+                        pulseGlow.style.width = '100px';
+                        pulseGlow.style.height = '100px';
+                        pulseGlow.style.borderRadius = '50%';
+                        pulseGlow.style.background = 'radial-gradient(circle, rgba(0, 207, 180, 0.5) 0%, transparent 70%)';
+                        pulseGlow.style.pointerEvents = 'none';
+                        pulseGlow.style.transform = 'translate(-50%, -50%)';
+                        pulseGlow.style.left = '50%';
+                        pulseGlow.style.top = '50%';
+                        appreciateBtn.parentElement.appendChild(pulseGlow);
+
+                        // Fade out particle
+                        setTimeout(() => {
+                            pulseGlow.style.transition = 'all 0.5s ease-out';
+                            pulseGlow.style.transform = 'translate(-50%, -50%) scale(2.2)';
+                            pulseGlow.style.opacity = '0';
+                        }, 10);
+
+                        setTimeout(() => {
+                            pulseGlow.remove();
+                        }, 510);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
